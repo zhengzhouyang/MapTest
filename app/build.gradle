@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'MyAndroidKey'
+            keyPassword '523523'
+            storeFile file('G:/android.jks')
+            storePassword '523523'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
-
     defaultConfig {
         applicationId "com.example.maptest"
         minSdkVersion 16
@@ -15,14 +22,18 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.android.support:design:23.0.1'
     compile 'com.google.android.gms:play-services:8.1.0'
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    compile 'it.neokree:MaterialTabs:0.11'
+    compile 'com.github.paolorotolo:appintro:3.2.0'
 }

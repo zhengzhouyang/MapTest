@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mapTypeNormal"
+        android:icon="@drawable/ic_nav_normal"
+        android:title="Normal"
+        />
+
+    <item
+        android:id="@+id/mapTypeSatellite"
+        android:icon="@drawable/ic_nav_satellite"
+        android:title="Satellite"
+        />
+
+    <item
+        android:id="@+id/mapTypeTerrian"
+        android:icon="@drawable/ic_nav_terrian"
+        android:title="Terrian"
+        />
+
+    <item
+        android:id="@+id/mapTypeHybrid"
+        android:icon="@drawable/ic_nav_hybrid"
+        android:title="Hybrid"
+        />
+
+    <item
+        android:id="@+id/mapTypeNone"
+        android:icon="@drawable/ic_nav_none"
+        android:title="None"
+        />
+<!--
+
+
+
+
+
+-->
+</menu>

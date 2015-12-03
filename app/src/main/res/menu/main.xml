@@ -1,34 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/mapTypeNormal"
-        android:title="Normal"
-        />
-
-    <item
-        android:id="@+id/mapTypeSatellite"
-        android:title="Satellite"
-        />
-
-    <item
-        android:id="@+id/mapTypeTerrian"
-        android:title="Terrian"
-        />
-
-    <item
-        android:id="@+id/mapTypeHybrid"
-        android:title="Hybrid"
-        />
-
-    <item
-        android:id="@+id/mapTypeNone"
-        android:title="None"
-        />
-
-    <item
-        android:id="@+id/gotoCurrentLocation"
-        android:title="CurrentLocation"
-        />
-
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/action_search"
+        app:queryHint="Input Location"/>
 </menu>
